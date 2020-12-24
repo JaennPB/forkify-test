@@ -179,10 +179,6 @@ const controlAddRecipe = async function (newRecipe) {
 // ***************************************************************************************
 // ********************************************************* publiser-subscriber technique
 
-const newFeature = function () {
-  console.log('Welcome to the app!');
-};
-
 // as soon as program starts,  init() runs the PUBLISHERS (functions that know when to react) from outside modules to listen for events
 // publishers in view modules will wait patiently for event listeners, once they are triggered, they run passed arguments(functions) from controller
 const init = function () {
@@ -201,6 +197,5 @@ const init = function () {
   recipeView.addHandlerAddBookmark(controlAddBookmarks);
   // 5) LISTEN "click/submit". user submits form, data is tranfered from form to controller to model
   addRecipeView.addHandlerClick(controlAddRecipe);
-  newFeature();
 };
 init();
