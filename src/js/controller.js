@@ -74,7 +74,6 @@ const controlRecipes = async function () {
     // 1) getting hash id from url
     // hash changes everytime an HTML link is cliked
     const id = window.location.hash.slice(1);
-    // console.log(id);
 
     if (!id) return;
 
